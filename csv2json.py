@@ -13,6 +13,7 @@ def csv2json(csvfile):
         with open(jsonfile, 'w') as f:
             json.dump(rows, f, indent=4)
         print('Converted {} to {}'.format(csvfile, jsonfile))
+        
 
 if __name__ == '__main__':
-    csv2json('data/commune.csv')
+    csv2json("data/france.csv")
